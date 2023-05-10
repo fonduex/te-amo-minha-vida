@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+  <style>
+    .accordion {
+      background-color: #ffffff00;
+      color: #f3e0ae;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ffffff00;
+    }
+    
+    .panel {
+      padding: 0 18px;
+      background-color: rgba(255, 255, 255, 0);
+      display: none;
+      overflow: hidden;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2>Poemas mixtos</h2>
+  
+  <button class="accordion">Poemas</button>
+  <div class="panel">
+    <p><i>Amor não se transforma de hora em hora, <br>
+        Antes se afirma para a eternidade. <br>
+        Se isso é falso, e que é falso alguém provou, <br>
+        Eu não sou poeta, e ninguém nunca amou. <br></i></p>
+  </div>
+  
+  <button class="accordion">Poema divertidos</button>
+  <div class="panel">
+    <p>    <i>A LUA FOI AO CINEMA <br>
+        <br>
+        A lua foi ao cinema, <br>
+        passava um filme engraçado, <br>
+        a história de uma estrela <br>
+        que não tinha namorado. <br>
+        <br>
+        Não tinha porque era apenas <br>
+        uma estrela bem pequena, <br>
+        dessas que, quando apagam, <br>
+        ninguém vai dizer, que pena! <br>
+        <br>
+        Era uma estrela sozinha, <br>
+        ninguém olhava para ela, <br>
+        e toda a luz que ela tinha <br>
+        cabia numa janela. <br>
+        <br>
+        A lu a ficou tão triste <br>
+        com aquela história de amor, <br>
+        que até hoje a lua insiste: <br>
+        - Amanheça, por favor! <br></i>.</p>
+  </div>
+  
+  <button class="accordion"> Poema de Shakespeare</button>
+  <div class="panel">
+    <i><p>lutar pelo amor e bom mas alcança-lo sem luta e melhor</i>.</p>
+  </div>
+  <button class="accordion">Rimas de amor</button>
+  <div class="panel">
+    <i><p>O mundo é grande e cabe <br>
+        nesta janela sobre o mar. <br>
+        <br>
+        O mar é grande e cabe <br>
+        na cama e no colchão de amar. <br>
+        <br>
+        O amor é grande e cabe <br>
+        no breve espaço de beijar. <br></i></p>
+  </div>
+  
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

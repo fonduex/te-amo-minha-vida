@@ -1,0 +1,13 @@
+body {
+    background-image: url(4.jpg);
+    background-size: cover;
+background-size: 100%;
+}
+h2 {
+    color: burlywood;
+}
+p {
+    font-size: x-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: darkred;
+}
